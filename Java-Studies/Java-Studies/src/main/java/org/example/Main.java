@@ -47,6 +47,10 @@ public class Main {
     }
 }
 
+//In the vote counting of an election, several voting records are generated containing the candidate's name
+// and the number of votes (in .csv format) that they received from a ballot box.
+// You need to create a program to read the voting records from a file and then generate a consolidated report with the totals for each candidate.
+
 //Create a text file with the information below
 //C:\tmp\in.txt
 
@@ -59,3 +63,10 @@ public class Main {
 //Maria Green,22
 //Bob Brown,25
 //Alex Blue,31
+
+//Na contagem de votos de uma eleição, são gerados vários registros
+//de votação contendo o nome do candidato e a quantidade de votos
+//(formato .csv) que ele obteve em uma urna de votação. Você deve
+//fazer um programa para ler os registros de votação a partir de um
+//arquivo, e daí gerar um relatório consolidado com os totais de cada
+//candidato
