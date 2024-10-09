@@ -12,13 +12,14 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
+        Map<String, Integer> registros = new TreeMap<>();
+
         System.out.println("Enter file full path:");
         String path = sc.nextLine();
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            Map<String, Integer> registros = new TreeMap<>();
-            String line = br.readLine();
 
+            String line = br.readLine();
             while (line != null) {
                 String[] fields = line.split(",");
                 String name = fields[0];
@@ -26,11 +27,10 @@ public class Main {
 
                 if (registros.containsKey(name)) {
                     registros.put(name, (registros.get(name) + votes));
-                    line = br.readLine();
                 } else {
                     registros.put(name, votes);
-                    line = br.readLine();
                 }
+                line = br.readLine();
 
             }
 
